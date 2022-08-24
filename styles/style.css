@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /*NAVBAR START*/
 header a {
     text-decoration: none;
@@ -154,7 +155,7 @@ h2 {
     position: absolute;
     top: 40%;
     left: 33%;
-  /*  transform: translate(-40%, -40%);*/
+    /*  transform: translate(-40%, -40%);*/
     text-align: left;
 }
 
