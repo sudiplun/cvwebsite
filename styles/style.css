@@ -366,7 +366,7 @@ h2 {
 .contact .right form .field input,
 .contact .right form .textarea textarea {
     height: 100%;
-    width: 100%;
+    width: auto;
     border: 1px solid lightgrey;
     border-radius: 6px;
     outline: none;
