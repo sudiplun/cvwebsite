@@ -154,8 +154,8 @@ h2 {
 .content {
     position: absolute;
     top: 40%;
-    left: 33%;
-    /*  transform: translate(-40%, -40%);*/
+    left: 36%;
+    transform: translate(-40%, -40%);
     text-align: left;
 }
 
@@ -185,6 +185,7 @@ h2 {
     position: relative;
     animation-name: slide1;
     animation-duration: 3s;
+    margin: 10px 0px;
     animation-direction: forwards;
     animation-play-state: ease-out;
 }
@@ -366,7 +367,7 @@ h2 {
 .contact .right form .field input,
 .contact .right form .textarea textarea {
     height: 100%;
-    width: auto;
+    width: 100%;
     border: 1px solid lightgrey;
     border-radius: 6px;
     outline: none;
