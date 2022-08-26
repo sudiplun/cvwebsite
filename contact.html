@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
-
     <title>Contact</title>
+    <!--------START-----Function(javascript) of form are here------------>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <!-- import contactjs  -->
+    <script src="javascript/contact.js">
+    </script>
+    <!-- --ENDING OF FUNCTION ---------->
 </head>
+
 <body>
-      <!-- contact section start -->
-      <section class="contact" id="contact">
+    <header>
+        <div id="logo"> <a href="./index.html">Portfolio</a></div>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">project</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">project</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
         <div class="max-width">
-            <!--<h2 class="title">Contact me</h2>   -->        
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Hi...! I'm sudip Shrestha. your are seening Contact place, where you get contact info of mine.
+                    <p>Hi...! I'm sudip Shrestha. your are seening Contact place, where you get contact info of mine &
+                        send me
+                        Email directly from this empty box by correct
                     </p>
-                    <!--strat of info display-->
+                    <!--start of info display-->
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -44,7 +76,7 @@
                     </div>
                     <!--ENDING OF INFO SHOWING-->
                 </div>
-                <!--form start here-->
+                <!-----RIGHT------form start here-->
                 <div class="column right">
                     <div class="text">Message me</div>
                     <form id="my_form">
@@ -56,10 +88,7 @@
                                 <input type="email" id="email" name="email" placeholder="Enter correct E-mail"
                                     required />
                             </div>
-                          <!-- <div class="field email">
-                                <input type="tel" id="phone" name="email" placeholder="Please enter correct contact"
-                                    required />
-                            </div>  --> 
+
                         </div>
                         <div class="field">
                             <input type="text" name="subject" id="subject" placeholder="Subjects are optional" />
@@ -78,4 +107,5 @@
     </section>
     <!--ENDING OF CONTACT SECTION ARE HERE-->
 </body>
+
 </html>

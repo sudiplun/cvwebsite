@@ -13,45 +13,6 @@
 
     <title>CV</title>
 
-    <!--Function of form are here-->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("l4P_xa0KYlv6h_oxI");
-        })();
-    </script>
-
-    <script type="text/javascript">
-        function sendmail() {
-            let fullName = document.getElementById("name").value;
-            let userEmail = document.getElementById("email").value;
-            let subject = document.getElementById("subject").value;
-            let userMessage = document.getElementById("message").value;
-            // let phone = document.getElementById("phone").value;
-
-
-            var contactParams = {
-                from_name: fullName,
-                from_email: userEmail,
-                subject: subject,
-                message: userMessage,
-                // phone: phone,
-            };
-            emailjs.send("service_xkvnbye", "template_08j2xyg", contactParams).then(
-                function (res) {
-                    window.alert("Message sent successfully...🥰");
-                    //it helps to clear the input field after prompt and press ok
-                    document.getElementById('message').value = ""
-                    document.getElementById('name').value = ""
-                    document.getElementById('email').value = ""
-                    document.getElementById('subject').value = ""
-                    // document.getElementById('phone').value = ""
-                },
-
-            );
-        }
-    </script>
 </head>
 
 <body>
@@ -73,7 +34,7 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">project</a></li>
                 <li><a href="#">blog</a></li>
-                <!-- <li><a href="#">Contact</a></li> -->
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -93,75 +54,6 @@
             </ul>
         </div>
     </div>
-
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <!--<h2 class="title">Contact me</h2>   -->
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Get in Touch</div>
-                    <p>Hi...! I'm sudip Shrestha. your are seening Contact place, where you get contact info of mine.
-                    </p>
-                    <!--strat of info display-->
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Sudip Shrestha</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Melung, Nepal</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">sudeeplun@gmail.com</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--ENDING OF INFO SHOWING-->
-                </div>
-                <!--form start here-->
-                <div class="column right">
-                    <div class="text">Message me</div>
-                    <form id="my_form">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" id="name" name="fullname" placeholder="Enter your Name" required />
-                            </div>
-                            <div class="field email">
-                                <input type="email" id="email" name="email" placeholder="Enter your E-mail"
-                                    required />
-                            </div>
-                            <!-- <div class="field email">
-                                <input type="tel" id="phone" name="email" placeholder="Please enter correct contact"
-                                    required />
-                            </div>  -->
-                        </div>
-                        <div class="field">
-                            <input type="text" name="subject" id="subject" placeholder="Subjects are optional" />
-                        </div>
-                        <div class="field textarea">
-                            <textarea id="message" cols="30" rows="10" placeholder="Let's dischare briefly..."
-                                required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button onclick="sendmail()" type="button" value="Reset form">Send message</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--ENDING OF CONTACT SECTION ARE HERE-->
     <script src="./javascript/scripts.js">
     </script>
 </body>
