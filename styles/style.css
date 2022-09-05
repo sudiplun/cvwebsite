@@ -347,7 +347,14 @@ h2 {
     color: #333;
 }
 
-/*contact form styleing */
+.contact section {
+    display: flex;
+    vertical-align: middle;
+    margin-top: 23px;
+}
+.contact section .icons {
+    margin-left: 2.5em;
+}
 
 .contact .contact-content .column-right {
     margin-left: 80px;
@@ -356,7 +363,10 @@ h2 {
 .contact .contact-content form .fields {
     display: flex;
     vertical-align: middle;
+}
 
+.contact .contact-content form .fields .email {
+    margin-left: 11px;
 }
 
 #name,
