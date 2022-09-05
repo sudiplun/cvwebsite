@@ -323,10 +323,6 @@ h2 {
     text-align: justify;
 }
 
-/* .contact-content .column-left .icons {
-    margin-left: 10cm;
-} */
-
 .contact .contact-content .row {
     display: flex;
     height: 69px;
@@ -357,6 +353,12 @@ h2 {
     margin-left: 80px;
 }
 
+.contact .contact-content form .fields {
+    display: flex;
+    vertical-align: middle;
+
+}
+
 #name,
 #email,
 #subject {
@@ -364,20 +366,22 @@ h2 {
     padding: 10px;
     margin: 10px 0px;
     width: 100%;
-    border-radius:15px;
-    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 15px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
-input, textarea {
-    font-family:inherit;
+
+input,
+textarea {
+    font-family: inherit;
     font-size: inherit;
-    width:100%;
+    width: 100%;
     resize: vertical;
-    padding:15px;
-    border-radius:15px;
-    border:0;
-    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
-    height:150px;
-  }
+    padding: 15px;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    height: 150px;
+}
 
 button {
     margin-top: 1.5em;
