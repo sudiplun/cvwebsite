@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- logo in about css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo"> <a href="../index.html">Portfolio</a></div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">project</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">project</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="about">
+            <div class="text">Get in Touch</div>
+            <p>Hi...! I'm sudip Shrestha. your are seening Contact place, where you get contact info of mine &
+                send me <br>
+                Email directly from this empty box by correct entry of fields
+            </p>
+            <!--start of info display-->
+            <div class="icon">
+                <div>
+                    <img src="../imgs/lee.svg" alt="photo" width="200" height="200">
+                </div>
+                <div class="information">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Sudip Shrestha</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Melung, Nepal</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">sudeeplun@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ENDING OF INFO SHOWING-->
+    <script src="../javascript/scripts.js">
+    </script>
+</body>
+
+</html>

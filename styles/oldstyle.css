@@ -32,9 +32,9 @@ header {
 ul {
     list-style: none;
     height: 100%;
+    display: flex;
     font-size: 18px;
     text-transform: uppercase;
-    display: flex;
     align-items: center;
     justify-content: space-around;
 }
@@ -297,86 +297,88 @@ h2 {
     }
 }
 
-/* ABOUT PAGE CSS */
-section .about {
+/* contact section start here.contact .title::after {
+    content: "get in touch";
+} */
+.max-width {
     margin: 50px;
-    text-align: center;
 }
 
-section .about p {
-    text-align: center;
+.contact .title::after {
+    content: "get in touch";
 }
 
-section .about .icon {
-    display: inline-flex;
-    margin-top: 3em;
-
-}
-
-section .about .information {
-    margin-left: 5em;
-}
-
-section .about .row {
+.contact-content {
+    box-sizing: border-box;
     display: flex;
-    height: 80px;
+    flex-direction: row;
+}
+
+.contact .contact-content .text {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact .contact-content .column-left p {
+    text-align: justify;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 69px;
     align-items: center;
 }
 
-section .about .row i {
-    font-size: 44px;
+.contact .contact-content .row .info {
+    margin-left: 17px;
+}
+
+.contact .contact-content .row i {
+    font-size: 24px;
     color: orange;
 }
 
-
-
-section .about .information .info .head {
+.contact .contact-content .info .head {
     font-weight: bold;
-    font-size: 23px;
+    font-size: 17px;
 }
 
-section .about .information {
-    margin-left: 5em;
+.contact .contact-content .info .sub-title {
+    color: #333;
 }
 
-section .about .information .info .sub-title {
-    margin-left: 27px;
-}
-
-
-
-/* CONTACT PAGE CSSS */
-
-section .text {
-    text-align: center;
-    font-weight: bold;
-    margin: 30px;
-    font-size: 30px;
-    color: rgb(255, 165, 0, 0.7);
-}
-
-section .contact {
-    margin: auto;
-    max-width: 570px;
-
-}
-
-section .contact form .fields {
+.contact .contact-content section {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    vertical-align: middle;
+    margin-top: 23px;
+}
+
+.contact section .icons {
+    margin-left: 2.5em;
+}
+
+
+
+.contact .contact-content form .fields {
+    display: flex;
+    vertical-align: middle;
+}
+
+.contact .contact-content form .fields .email {
+    margin-left: 11px;
 }
 
 #name,
 #email,
 #subject {
-    height: 47px;
-    padding: 23px;
-    margin: 13px 0px;
-    width: 96%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0px;
+    width: 100%;
     border-radius: 15px;
-    box-shadow: 0 0 15px 4px rgba(128, 128, 128, 0.5);
-    color: black;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 }
 
 input,
@@ -388,9 +390,8 @@ textarea {
     padding: 15px;
     border-radius: 15px;
     border: 0;
-    box-shadow: 0 0 15px 4px rgba(128, 128, 128, 0.5);
-    height: 170px;
-    color: black;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    height: 150px;
 }
 
 button {
@@ -400,7 +401,7 @@ button {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
-    color: rgb(255, 165, 0);
+    color: #000;
     background-color: #fff;
     border: none;
     border-radius: 45px;
@@ -420,8 +421,14 @@ button:hover {
 button:active {
     transform: translateY(-1px);
 }
+
+/* responsive for .contact-content */
 @media (max-width: 814px) {
-    .icon {
+    .contact-content {
         flex-direction: column;
     }
+
+    /* .contact .contact-content section {
+        flex-direction: column;
+    } */
 }

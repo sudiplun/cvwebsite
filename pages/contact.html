@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="logo"> <a href="../index.html">Portfolio</a></div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">project</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">project</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- contact section start -->
+    <section>
+        <div class="text">Message me</div>
+        <div class="contact">
+            <form id="my_form">
+                <div class="fields">
+                    <div class="field name">
+                        <input type="text" id="name" name="fullname" placeholder="Enter your Name" required />
+                    </div>
+                    <div class="field email">
+                        <input type="email" id="email" name="email" placeholder="Enter correct E-mail" required />
+                    </div>
+
+                </div>
+                <div class="field">
+                    <input type="text" name="subject" id="subject" placeholder="Subjects are optional" />
+                </div>
+                <div class="field textarea">
+                    <textarea id="message" cols="30" rows="10" placeholder="Let's dischare briefly..."
+                        required></textarea>
+                </div>
+                <div class="button">
+                    <button onclick="sendmail()" type="button" value="Reset form">Send message</button>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+    <!--ENDING OF contact SECTION ARE HERE-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script src="../javascript/scripts.js">
+    </script>
+</body>
+
+</html>
