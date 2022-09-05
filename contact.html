@@ -6,17 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
-
+    <!-- for logo -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />                 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Contact</title>
+
     <!--------START-----Function(javascript) of form are here------------>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
+
     <!-- import contactjs  -->
+
     <script src="javascript/contact.js">
     </script>
+
     <!-- --ENDING OF FUNCTION ---------->
 </head>
 
@@ -51,8 +57,8 @@
                 <div class="column-left">
                     <div class="text">Get in Touch</div>
                     <p>Hi...! I'm sudip Shrestha. your are seening Contact place, where you get contact info of mine &
-                        send me
-                        Email directly from this empty box by correct Enter..!
+                        send me <br>
+                        Email directly from this empty box by correct entry of fields
                     </p>
                     <!--start of info display-->
                     <div class="icons">
@@ -101,7 +107,7 @@
                             <textarea id="message" cols="30" rows="10" placeholder="Let's dischare briefly..."
                                 required></textarea>
                         </div>
-                        <div class="button-area">
+                        <div class="button">
                             <button onclick="sendmail()" type="button" value="Reset form">Send message</button>
                         </div>
                     </form>
