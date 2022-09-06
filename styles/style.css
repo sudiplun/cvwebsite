@@ -137,6 +137,7 @@ h1 {
     font-family: "Roboto Mono", monospace;
     color: #716f6f;
     font-size: 2em;
+    text-shadow: -.08em .05em rgba(255, 165, 0, 0.5);
 }
 
 h2 {
@@ -238,7 +239,9 @@ h2 {
 @media only screen and (min-device-width: 1024px) {
     .content h1 {
         font-size: 3.5em;
+        text-shadow: -.08em .05em rgba(255, 165, 0, 0.5);
         display: block;
+        
     }
 
     .content h2 {
@@ -261,6 +264,7 @@ h2 {
     .content h1 {
         font-size: 2.5em;
         display: inline-flex;
+        text-shadow: -.08em .05em rgba(255, 165, 0, 0.5);
     }
 
     .content h2 {
@@ -281,6 +285,7 @@ h2 {
     .content h1 {
         font-size: 1.9em;
         display: inline-flex;
+        text-shadow: -.08em .05em rgba(255, 165, 0, 0.5);
     }
 
     .content h2 {
@@ -307,7 +312,7 @@ section .about p {
     text-align: center;
 }
 
-section .about .icon {
+section .about .info_icon {
     display: inline-flex;
     margin-top: 3em;
 
@@ -328,20 +333,15 @@ section .about .row i {
     color: orange;
 }
 
-
-
-section .about .information .info .head {
+section .about .information .info_info .head {
     font-weight: bold;
     font-size: 23px;
     text-align: start;
     margin-left: 28px;
 }
 
-section .about .information {
-    margin-left: 5em;
-}
 
-section .about .information .info .sub-title {
+section .about .information .info_info .sub-title {
     margin-left: 27px;
 }
 
@@ -355,6 +355,7 @@ section .text {
     margin: 30px;
     font-size: 30px;
     color: rgb(255, 165, 0, 0.7);
+    text-shadow: -.08em .05em rgb(128, 128, 128, 0.3);
 }
 
 section .contact {
@@ -422,6 +423,7 @@ button:hover {
 button:active {
     transform: translateY(-1px);
 }
+
 @media (max-width: 814px) {
     .icon {
         flex-direction: column;
