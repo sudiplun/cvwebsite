@@ -299,7 +299,7 @@ h2 {
 
 /* ABOUT PAGE CSS */
 section .about {
-    margin: 50px;
+    margin: 40px;
     text-align: center;
 }
 
@@ -333,6 +333,8 @@ section .about .row i {
 section .about .information .info .head {
     font-weight: bold;
     font-size: 23px;
+    text-align: start;
+    margin-left: 28px;
 }
 
 section .about .information {
