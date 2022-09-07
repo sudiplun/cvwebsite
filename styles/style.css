@@ -135,8 +135,8 @@ ul li a:hover {
 /*BODY PART*/
 h1 {
     font-family: "Roboto Mono", monospace;
-    color: #716f6f;
     font-size: 2em;
+    color: #716f6f;
     text-shadow: -.08em .05em rgba(255, 165, 0, 0.5);
 }
 
@@ -354,8 +354,8 @@ section .text {
     font-weight: bold;
     margin: 30px;
     font-size: 30px;
-    color: rgb(255, 165, 0, 0.7);
-    text-shadow: -.08em .05em rgb(128, 128, 128, 0.3);
+    color: #716f6f;
+    text-shadow: -.08em .05em rgba(255, 165, 0, 0.7);
 }
 
 section .contact {
