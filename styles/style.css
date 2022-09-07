@@ -333,7 +333,7 @@ section .about .row i {
     color: orange;
 }
 
-section .about .information .info_info .head {
+section .about .information .info .head {
     font-weight: bold;
     font-size: 23px;
     text-align: start;
@@ -341,8 +341,8 @@ section .about .information .info_info .head {
 }
 
 
-section .about .information .info_info .sub-title {
-    margin-left: 27px;
+section .about .information .info .sub-title {
+    margin-left: 29px;
 }
 
 
